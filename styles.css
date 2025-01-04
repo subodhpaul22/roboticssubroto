@@ -1,0 +1,17 @@
+body { font-family: Arial, sans-serif; margin: 0; }
+header { background: #4CAF50; text-align: center; padding: 10px; }
+header h1, header a { color: white; text-decoration: none; }
+.blog-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.blog-card { background: white; border: 1px solid #ddd; padding: 10px; text-align: center; }
+footer { text-align: center; background: #4CAF50; color: white; padding: 10px; }
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+    header nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
