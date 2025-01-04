@@ -6,6 +6,30 @@
     <title>যোগাযোগ</title>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
+    <style>
+        /* Make the creator image responsive */
+        .contact-info .creator-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%; /* Optional: to make the image circular */
+            width: 150px; /* Default width */
+        }
+
+        /* Adjust the layout for smaller screens */
+        @media (max-width: 600px) {
+            .contact-info {
+                text-align: center;
+            }
+
+            .contact-info .creator-img {
+                width: 120px; /* Smaller width for mobile devices */
+            }
+
+            .creator-details {
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,9 +44,10 @@
         <section id="contact">
             <h2>আমাদের সাথে যোগাযোগ করুন</h2>
             <div class="contact-info">
-                <img src="creator.jpg" alt="Developer" class="developer-img">
-                <div class="developer-details">
-                    <h3>ডেভেলপার তথ্য:</h3>
+                <!-- Replace developer.jpg with creator.jpg -->
+                <img src="creator.jpg" alt="Creator" class="creator-img">
+                <div class="creator-details">
+                    <h3>ক্রিয়েটর তথ্য:</h3>
                     <ul>
                         <li><strong>নাম:</strong> Subodh Paul</li>
                         <li><strong>ইমেইল:</strong> <a href="mailto:subodhpaul72@gmail.com">subodhpaul72@gmail.com</a></li>
